@@ -7,15 +7,16 @@ class Motor:
 
 class Carro:
     def __init__(self, motor,llanta,color,placa):
-        if isinstance(motor,Motor):
-            self.motor=motor
+        if not isinstance(motor,Motor):
+            raise TypeError("el motor debe ser instancia de Motor")
+        self.motor=motor
         self.llanta=llanta
         self.color=color
         self.placa=placa
 
     def ruidoMotor(self,sonido):
-        self.sonido=sonido
         return sonido
+
 
 
 

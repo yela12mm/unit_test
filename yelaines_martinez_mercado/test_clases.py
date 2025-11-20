@@ -1,4 +1,4 @@
-### agregacion ###
+###agregacion###
 
 ### verificicar instancias de la lista ###
 from clases import Estudiante,Salon
@@ -15,7 +15,7 @@ def test_instancias():
     salon.agregarEstudiantes(estd3)
     salon.agregarEstudiantes(estd4)
     
-    assert all(isinstance(e, Estudiante)for e in salon.estudiantes)
+    assert all(isinstance(e, Estudiante) for e in salon.estudiantes)
     assert isinstance(salon,Salon)
     
 
@@ -29,7 +29,7 @@ def test_lista():
     salon.agregarEstudiantes(estudiante)
     assert estudiante in salon.estudiantes
 
-###verficar atributos 
+### verficar atributos 
 
 def test_atributos():
     salon=Salon("Sexto","maria auxiliadora")
